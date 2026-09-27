@@ -4,7 +4,7 @@ import { createRatchet } from '@getratchet/sdk';
 const apiKey = process.env.RATCHET_WORKER_KEY;
 if (!apiKey) throw new Error('Configure RATCHET_WORKER_KEY');
 if (!process.env.RATCHET_WORKER_ID || process.env.RATCHET_WORKER_ID.length < 8) throw new Error('Configure a stable RATCHET_WORKER_ID (at least 8 characters)');
-const ratchet = createRatchet({ apiKey, baseUrl: process.env.RATCHET_BASE_URL || 'https://getratchet.waelfz.com' });
+const ratchet = createRatchet({ apiKey, baseUrl: process.env.RATCHET_BASE_URL || 'https://getratchet.app' });
 const worker = ratchet.worker;
 // Stable per replica: avoid consuming a new registration on every restart.
 worker.workerId = process.env.RATCHET_WORKER_ID;
