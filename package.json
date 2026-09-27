@@ -1,0 +1,9 @@
+{
+  "name": "getratchet-customer-worker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "start": "node index.js" },
+  "dependencies": { "@getratchet/sdk": "0.1.0" },
+  "engines": { "node": ">=22" }
+}
